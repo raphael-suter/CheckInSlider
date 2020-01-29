@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 1rem 1rem 0.6rem;
+  background: #e5e5e5;
+
+  input[type = "range"] {
+    margin: auto;
+    min-width: 300px;
+    padding: 26px 2px 25px;
+    background: #999999;
+    border-radius: 4px;
+
+    &::-webkit-slider-thumb, &::-moz-range-thumb {
+      min-width: 160px;
+      height: 60px;
+      background: #000080;
+      cursor: pointer;
+      border-radius: 4px;
+
+      &::before {
+        content: "checkin";
+      }
+    }
+  }
+}
